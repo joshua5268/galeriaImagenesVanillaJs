@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+  padding: 0;  
+}
+
+header{
+    height: 6vh;
+}
+
+main{
+    margin-top: 7vh;
+}
+.box{
+    height: 600px;
+}
+
+.card{
+    height: 100%;
+}
+
+.card img{
+    object-fit: cover;
+    height: 450px;
+}
