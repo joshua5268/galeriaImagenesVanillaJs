@@ -1,16 +1,29 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #F1F1F2;
-}
-
-p{
-    color: #A1D6E2;
+  background-color: #A1D6E2;
 }
 
 header{
     height: 7vh;
-    background-color: #BCBABE;
+    min-height: 50px;
+    background-color: #1995AD;
+    border: 1px black solid;
+}
+
+.divLogo{
+    height: 90%;
+    width: 50px;
+}
+
+.imgLogo{
+    height: 100%;
+    width: 100%;
+}
+
+#inputBusqueda{
+    height: 70%;
+    width: 50%;
 }
 
 main{
@@ -18,7 +31,7 @@ main{
 }
 
 .tarjeta {
-    height: 450px;
+    height: 500px;
     background-color: transparent;
     perspective: 1000px;
     cursor: pointer;
@@ -44,13 +57,10 @@ main{
 }
 
 .back {
-    background-color: #1995AD;
+    overflow-y: scroll;
+    background-color: #BCBABE;
     transform: rotateY(180deg);
 }
-
-.tarjeta:hover .box {
-    transform: rotateY(180deg);
-} 
 
 .card{
     height: 100%;
@@ -65,3 +75,16 @@ main{
 .card-body p{
     margin: 7px;
 }
+
+.buttonFav{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    right: 0;
+}
+
+/* .tarjeta:hover .box {
+    transform: rotateY(180deg);
+}  */

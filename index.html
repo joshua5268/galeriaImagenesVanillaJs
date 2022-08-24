@@ -13,14 +13,17 @@
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col d-flex align-items-center">
-                    <span class="fs-4 mx-2">WIKI GOT</span>
-                    <span class="fs-5 mx-2">Personajes</span>
-                    <span class="fs-5 mx-2">Eventos</span>
+                    <div class="divLogo">
+                        <img src="images/logo.png" class="imgLogo">
+                    </div>
+                    <div>
+                        <span class="fs-4 mx-2 text-white">WIKI GOT</span>
+                        <span class="fs-5 mx-2 text-white">Personajes</span>
+                        <span class="fs-5 mx-2 text-white">Eventos</span>
+                    </div>
                 </div>
                 <div class="col d-flex justify-content-end align-items-center">
-                    <form class="d-flex" role="search">
-                        <input class="form-control mx-4" placeholder="Buscar" aria-label="Search">
-                    </form>
+                        <input class="form-control mx-4" placeholder="Buscar" aria-label="Search" id="inputBusqueda">
                 </div>
             </div>
         </div>
@@ -29,7 +32,7 @@
     <main>
         <section>
             <div class="container">
-                <div class="row row-cols-lg-4 row-cols-md-3 row-cols-1" id="resultados">   
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1" id="resultados">   
                     
                 </div>
             </div>
@@ -37,5 +40,7 @@
     </main>
 
     <script src="js/app.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/fav.js"></script>
   </body>
 </html>
