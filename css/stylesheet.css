@@ -26,6 +26,12 @@ header{
     width: 50%;
 }
 
+
+
+
+
+
+
 main{
     margin-top: 7vh;
 }
@@ -46,17 +52,16 @@ main{
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-
- .front, .back{
-    position: absolute;
-    backface-visibility: hidden;
-  }
   
 .front {
+    position: absolute;
+    backface-visibility: hidden;
     background-color: #1995AD;
 }
 
 .back {
+    position: absolute;
+    backface-visibility: hidden;
     overflow-y: scroll;
     background-color: #BCBABE;
     transform: rotateY(180deg);
@@ -88,3 +93,12 @@ main{
 /* .tarjeta:hover .box {
     transform: rotateY(180deg);
 }  */
+
+
+.rotar1 .box{
+    transform: rotateY(180deg);
+  }
+  
+.rotar2 .box{
+    transform: rotateY(0deg);
+}

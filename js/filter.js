@@ -7,5 +7,5 @@ inputBusqueda.addEventListener('keyup', (evt) => {
     let housesFound = houses.filter(house => house.house.toLowerCase().includes(name) && !house.name.toLowerCase().includes(name));
     let resultado = nameFound.concat(housesFound);
 
-    tarjetas(resultado);
+    dibujarTarjetas(resultado);
 });
