@@ -1,13 +1,13 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #A1D6E2;
+  background-color: #BA5536;
 }
 
 header{
     height: 7vh;
     min-height: 50px;
-    background-color: #1995AD;
+    background-color: #46211A;
     border: 1px black solid;
 }
 
@@ -35,16 +35,17 @@ section{
 }
 
 .caja{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px black;
-    background-color:white ;
+    background-color: #46211A ;
+    cursor: pointer;
 }
 
 .caja:hover{
-    background-color:#BCBABE;
+    background-color:#A43820;
 }
 
 .caja div{
@@ -54,22 +55,11 @@ section{
     align-items: center;
 }
 
-.caja i{
-    font-size: 2rem;
-}
-
 .caja p{
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 600;
+    color: white;
 }
-
-
-
-
-
-
-
-
 
 .tarjeta {
     height: 500px;
@@ -91,15 +81,17 @@ section{
 .front {
     position: absolute;
     backface-visibility: hidden;
-    background-color: #1995AD;
+    background-color: #693D3D;
+    color: white;
 }
 
 .back {
     position: absolute;
     backface-visibility: hidden;
     overflow-y: scroll;
-    background-color: #BCBABE;
+    background-color: #A43820;
     transform: rotateY(180deg);
+    color: white;
 }
 
 .card{
@@ -125,11 +117,6 @@ section{
     right: 0;
 }
 
-/* .tarjeta:hover .box {
-    transform: rotateY(180deg);
-}  */
-
-
 .rotar1 .box{
     transform: rotateY(180deg);
   }
@@ -137,5 +124,3 @@ section{
 .rotar2 .box{
     transform: rotateY(0deg);
 }
-
-

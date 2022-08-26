@@ -12,6 +12,12 @@ document.querySelector("#resultados").addEventListener('click', (evt) => {
     let fav = evt.target;
 
     //Favoritos
+    favoritosStorage = localStorage.getItem("@favoritos");
+
+    if (favoritosStorage) {
+    favoritos = JSON.parse(favoritosStorage);
+    }
+
     if(fav.getAttribute("data-type") == "favoritos"){
         let id = evt.target.getAttribute("id");
 
@@ -25,7 +31,15 @@ document.querySelector("#resultados").addEventListener('click', (evt) => {
             localStorage.setItem("@favoritos", JSON.stringify(favoritos));
         }
     }
-    console.log(fav);
+    
+    favoritos = [];
+    favoritosStorage = localStorage.getItem("@favoritos");
+
+    if (favoritosStorage) {
+    favoritos = JSON.parse(favoritosStorage);
+    }
+
+
     //Flip
     if(fav.getAttribute("data-girar")){
         let id = evt.target.getAttribute("data-girar");
