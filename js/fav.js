@@ -12,12 +12,6 @@ document.querySelector("#resultados").addEventListener('click', (evt) => {
     let fav = evt.target;
 
     //Favoritos
-    favoritosStorage = localStorage.getItem("@favoritos");
-
-    if (favoritosStorage) {
-    favoritos = JSON.parse(favoritosStorage);
-    }
-
     if(fav.getAttribute("data-type") == "favoritos"){
         let id = evt.target.getAttribute("id");
 
@@ -34,11 +28,9 @@ document.querySelector("#resultados").addEventListener('click', (evt) => {
     
     favoritos = [];
     favoritosStorage = localStorage.getItem("@favoritos");
-
     if (favoritosStorage) {
-    favoritos = JSON.parse(favoritosStorage);
+        favoritos = JSON.parse(favoritosStorage);
     }
-
 
     //Flip
     if(fav.getAttribute("data-girar")){

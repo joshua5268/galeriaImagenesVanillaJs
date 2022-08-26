@@ -23,15 +23,11 @@ header{
 
 #inputBusqueda{
     height: 70%;
-    width: 50%;
+    width: 70%;
 }
 
 main{
     margin-top: 8vh;
-}
-
-section{
-    padding: 10px
 }
 
 .caja{
