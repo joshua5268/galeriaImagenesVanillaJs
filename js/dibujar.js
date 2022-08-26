@@ -54,14 +54,14 @@ function dibujarTarjetas(arreglo){
 
         let card3 = document.createElement("div");
         card3.innerHTML = `
-            <p class="card-title fs-6">Gender: ${elemento.gender}</p>
-            <p class="card-title fs-6">Father: ${elemento.father}</p>
-            <p class="card-title fs-6">Origin: ${elemento.origin}</p>
-            <p class="card-title fs-6">Spouse: ${elemento.spouse}</p>
-            <p class="card-title fs-6">Religion: ${elemento.religion}</p>
-            <p class="card-title fs-6">Culture: ${elemento.culture}</p>
-            <p class="card-title fs-6">Siblings: ${elemento.siblings}</p>
-            <p class="card-title fs-6">Titles: ${elemento.titles}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Gender: ${elemento.gender}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Father: ${elemento.father}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Origin: ${elemento.origin}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Spouse: ${elemento.spouse}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Religion: ${elemento.religion}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Culture: ${elemento.culture}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Siblings: ${elemento.siblings}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Titles: ${elemento.titles}</p>
         `;
         cardbody.append(card3);
         

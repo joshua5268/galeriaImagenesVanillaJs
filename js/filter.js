@@ -1,4 +1,5 @@
 let inputBusqueda = document.querySelector("#inputBusqueda");
+let filtroAb = document.querySelector("#filtroAb");
 
 inputBusqueda.addEventListener('keyup', (evt) => {
     let name = inputBusqueda.value.toLowerCase();
@@ -8,4 +9,9 @@ inputBusqueda.addEventListener('keyup', (evt) => {
     let resultado = nameFound.concat(housesFound);
 
     dibujarTarjetas(resultado);
+});
+
+
+filtroAb.addEventListener("click", () => {
+    
 });

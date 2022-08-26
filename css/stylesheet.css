@@ -26,15 +26,50 @@ header{
     width: 50%;
 }
 
-
-
-
-
-
-
 main{
-    margin-top: 7vh;
+    margin-top: 8vh;
 }
+
+section{
+    padding: 10px
+}
+
+.caja{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px black;
+    background-color:white ;
+}
+
+.caja:hover{
+    background-color:#BCBABE;
+}
+
+.caja div{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja i{
+    font-size: 2rem;
+}
+
+.caja p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
 
 .tarjeta {
     height: 500px;
@@ -102,3 +137,5 @@ main{
 .rotar2 .box{
     transform: rotateY(0deg);
 }
+
+
