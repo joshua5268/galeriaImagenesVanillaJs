@@ -20,7 +20,7 @@ function dibujarTarjetas(arreglo){
 
         cardf.innerHTML = `
         <button class="buttonFav" data-type="favoritos" id="${elemento.id}">💛</button>
-        <img src="${elemento.image}" data-girar="${elemento.id}">
+        <img src="${elemento.image}" data-girar="${elemento.id}" class="imgPhoto">
         <div class="card-body">
             <p class="card-title fs-3">${elemento.name}</p>
             <p class="card-text fs-6">${elemento.house}</p>

@@ -79,6 +79,11 @@ main{
     color: white;
 }
 
+.imgPhoto:hover{
+    opacity: .5;
+    box-shadow: 0 8px 8px 0 #46211A;    
+}
+
 .back {
     position: absolute;
     backface-visibility: hidden;
@@ -109,6 +114,7 @@ main{
     background: transparent;
     border: none;
     right: 0;
+    z-index: 2;
 }
 
 .rotar1 .box{
