@@ -20,6 +20,7 @@ function dibujarTarjetas(arreglo){
 
         cardf.innerHTML = `
         <button class="buttonFav" data-type="favoritos" id="${elemento.id}">💛</button>
+        <i class="bi bi-arrows-fullscreen expandirImage" data-modal="show" data-image="${elemento.image}" data-name="${elemento.name}"></i>
         <img src="${elemento.image}" data-girar="${elemento.id}" class="imgPhoto">
         <div class="card-body">
             <p class="card-title fs-3">${elemento.name}</p>
@@ -54,7 +55,9 @@ function dibujarTarjetas(arreglo){
 
         let card3 = document.createElement("div");
         card3.innerHTML = `
+            <p class="card-title fs-6" data-girar="${elemento.id}">Alive: ${elemento.alive}</p>
             <p class="card-title fs-6" data-girar="${elemento.id}">Gender: ${elemento.gender}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Actor: ${elemento.actor}</p>
             <p class="card-title fs-6" data-girar="${elemento.id}">Father: ${elemento.father}</p>
             <p class="card-title fs-6" data-girar="${elemento.id}">Origin: ${elemento.origin}</p>
             <p class="card-title fs-6" data-girar="${elemento.id}">Spouse: ${elemento.spouse}</p>
@@ -62,6 +65,7 @@ function dibujarTarjetas(arreglo){
             <p class="card-title fs-6" data-girar="${elemento.id}">Culture: ${elemento.culture}</p>
             <p class="card-title fs-6" data-girar="${elemento.id}">Siblings: ${elemento.siblings}</p>
             <p class="card-title fs-6" data-girar="${elemento.id}">Titles: ${elemento.titles}</p>
+            <p class="card-title fs-6" data-girar="${elemento.id}">Allegiances: ${elemento.allegiances}</p>
         `;
         cardbody.append(card3);
         

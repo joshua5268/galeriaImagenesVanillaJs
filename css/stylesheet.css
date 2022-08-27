@@ -124,3 +124,51 @@ main{
 .rotar2 .box{
     transform: rotateY(0deg);
 }
+
+.modal1{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.modal1--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.modal_container{
+    background-color: white;
+    padding: 10px;
+}
+
+.modal_img{
+    background-color: #693D3D;
+    margin-top: 10px;
+    max-width: 90vw;
+    max-height: 70vh;
+}
+
+.modal_img img{
+    height: 100%;
+    width: 100%;
+    max-width: 90vw;
+    max-height: 70vh;
+}
+
+
+.expandirImage{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}

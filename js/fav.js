@@ -42,6 +42,17 @@ document.querySelector("#resultados").addEventListener('click', (evt) => {
             tarj.classList.replace('rotar1', 'rotar2');
         }
     }
+
+    if(fav.getAttribute("data-modal")){
+        let imagen = fav.getAttribute("data-image");
+        let nombre = fav.getAttribute("data-name");
+        let modal = document.querySelector(".modal1");
+        console.log(nombre)
+
+        document.querySelector("#imageImg").setAttribute("src", imagen);
+        document.querySelector("#nameNam").innerHTML = nombre;
+        modal.classList.add('modal1--show');
+    }
 });
 
 function filtrarFavoritos(personajes){
