@@ -5,29 +5,12 @@ body{
 }
 
 header{
-    height: 7vh;
-    min-height: 50px;
     background-color: #46211A;
     border: 1px black solid;
 }
 
-.divLogo{
-    height: 90%;
-    width: 50px;
-}
-
-.imgLogo{
-    height: 100%;
-    width: 100%;
-}
-
-#inputBusqueda{
-    height: 70%;
-    width: 70%;
-}
-
 main{
-    margin-top: 8vh;
+    margin-top: 85px;
 }
 
 .caja{
