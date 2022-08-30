@@ -169,6 +169,7 @@ main{
 .expandirImage{
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 15px;
     z-index: 2;
+    font-size: 1.5rem;
 }

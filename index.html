@@ -29,12 +29,11 @@
     </header>
     
     <main>
-
-        <section>
-            <div class="container">
+        <div class="container">
+            <section>
                 <div class="row row-cols-3">
                     <div class="col d-flex justify-content-center">
-                        <div class="caja my-2" id="filtroAb" data-ab="asc">
+                        <div class="caja" id="filtroAb" data-ab="asc">
                             <div>
                                 <i class="bi bi-arrow-down-up fs-4" style="color: white;"></i>
                             </div>
@@ -44,7 +43,7 @@
                         </div>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <div class="caja my-2" id="filtroGender" data-gender="male">
+                        <div class="caja" id="filtroGender" data-gender="male">
                             <div>
                                 <i class="bi bi-arrow-down-up fs-4" style="font-size: 2rem; color: white;"></i>
                             </div>
@@ -54,7 +53,7 @@
                         </div>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <div class="caja my-2" id="filtroFav">
+                        <div class="caja" id="filtroFav">
                             <div>
                                 <i class="bi bi-arrow-down-up fs-4" style="font-size: 2rem; color: white;"></i>
                             </div>
@@ -64,17 +63,22 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1" id="resultados">   
-                    
+            </section>
+    
+            <section>
+                <div class="alert alert-dark my-3" role="alert" id="alertDiv">
+                    <p id="alertResultados" class="text-center m-0"></p>
                 </div>
-            </div>
-        </section>
+            </section>
+    
+            <section>
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1" id="resultados">   
+                        
+                </div>
+            </section>
 
+        </div>
+        
         <div class="modal1">
             <div class="modal_container">
                 <div class="modal_title row">
@@ -90,7 +94,6 @@
                 </div>
             </div>
         </div>
-
 
     </main>
     
