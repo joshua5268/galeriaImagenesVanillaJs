@@ -1,10 +1,14 @@
 function dibujarTarjetas(arreglo){
-
-    document.querySelector("#resultados").innerHTML="";
+    let divMostrarResultados = document.querySelector("#resultados");
+    let alertDiv = document.querySelector("#alertDiv");
+    let alertResultados = document.querySelector("#alertResultados");
+    
+    divMostrarResultados.innerHTML="";
+    
     if(arreglo.length !== 0){
         arreglo.forEach(elemento => {
 
-            document.querySelector("#alertDiv").classList.replace("alert-danger","alert-dark");
+            alertDiv.classList.replace("alert-danger","alert-dark");
         
             let col = document.createElement("div");
             col.classList.add("col" , "my-2");
@@ -76,7 +80,7 @@ function dibujarTarjetas(arreglo){
             tar.append(box);
             col.append(tar);
     
-            document.querySelector("#resultados").append(col);
+            divMostrarResultados.append(col);
     
             //pinta favoritos
             if(favoritosStorage && favoritosStorage.includes(elemento.id)){
@@ -85,8 +89,8 @@ function dibujarTarjetas(arreglo){
     
         });
     }else{
-        document.querySelector("#alertDiv").classList.replace("alert-dark","alert-danger");
+        alertDiv.classList.replace("alert-dark","alert-danger");
     }
     
-    document.querySelector("#alertResultados").innerHTML = `${arreglo.length} Resultados encontrados`;
+    alertResultados.innerHTML = `${arreglo.length} Resultados encontrados`;
 }

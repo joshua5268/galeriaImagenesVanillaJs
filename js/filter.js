@@ -1,7 +1,10 @@
 let inputBusqueda = document.querySelector("#inputBusqueda");
-let filtroAb = document.querySelector("#filtroAb");
-let filtroGender = document.querySelector("#filtroGender");
+let filtroAll = document.querySelector("#filtroAll");
 let filtroFav = document.querySelector("#filtroFav");
+let filtroMale = document.querySelector("#filtroMale");
+let filtroFemale = document.querySelector("#filtroFemale");
+let filtroAlive = document.querySelector("#filtroAlive");
+let filtroDead = document.querySelector("#filtroDead");
 
 inputBusqueda.addEventListener('keyup', (evt) => {
     let name = inputBusqueda.value.toLowerCase();
@@ -13,54 +16,31 @@ inputBusqueda.addEventListener('keyup', (evt) => {
     dibujarTarjetas(resultado);
 });
 
-
-filtroAb.addEventListener("click", () => {
-    if(filtroAb.getAttribute("data-ab") == "asc"){
-        let arrayAz = personajes.sort(function (a, b) {
-            if (a.name > b.name) {
-              return 1;
-            }
-            if (a.name < b.name) {
-              return -1;
-            }
-    
-            return 0;
-          });
-        dibujarTarjetas(arrayAz);
-        document.querySelector("#pAb").innerHTML = "Z - A";
-        filtroAb.setAttribute("data-ab", "des");
-    }else{
-        let arrayAz = personajes.sort(function (a, b) {
-            if (b.name > a.name) {
-              return 1;
-            }
-            if (b.name < a.name) {
-              return -1;
-            }
-    
-            return 0;
-          });
-        dibujarTarjetas(arrayAz);
-        document.querySelector("#pAb").innerHTML = "A - Z";
-        filtroAb.setAttribute("data-ab", "asc");
-    }
+filtroAll.addEventListener("click", () => {
+  dibujarTarjetas(personajes);
 });
 
-filtroGender.addEventListener("click", () => {
-    if(filtroGender.getAttribute("data-gender") == "male"){
-        let arrayFem = personajes.filter(personaje => personaje.gender == "male");
-        dibujarTarjetas(arrayFem);
-        document.querySelector("#pGender").innerHTML = "Female";
-        filtroGender.setAttribute("data-gender", "female");
-    }else{
-        let arrayMal = personajes.filter(personaje => personaje.gender == "female");
-        dibujarTarjetas(arrayMal);
-        document.querySelector("#pGender").innerHTML = "Male";
-        filtroGender.setAttribute("data-gender", "male");
-    }
+filtroMale.addEventListener("click", () => {
+  let arrayFem = personajes.filter(personaje => personaje.gender == "male");
+  dibujarTarjetas(arrayFem);
+});
+
+filtroFemale.addEventListener("click", () => {
+  let arrayFem = personajes.filter(personaje => personaje.gender == "female");
+  dibujarTarjetas(arrayFem);
 });
 
 filtroFav.addEventListener("click", () => {
-    let arrayFav = personajes.filter(personaje => favoritosStorage.includes(personaje.id));
-    dibujarTarjetas(arrayFav);
+  let arrayFav = personajes.filter(personaje => favoritosStorage.includes(personaje.id));
+  dibujarTarjetas(arrayFav);
+});
+
+filtroAlive.addEventListener("click", () => {
+  let arrayAlive = personajes.filter(personaje => personaje.alive === true);
+  dibujarTarjetas(arrayAlive);
+});
+
+filtroDead.addEventListener("click", () => {
+  let arrayDead = personajes.filter(personaje => personaje.alive === false);
+  dibujarTarjetas(arrayDead);
 });
