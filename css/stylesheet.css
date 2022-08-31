@@ -131,7 +131,7 @@ main{
 }
 
 .modal_container{
-    background-color: #7DA3D1;
+    background-color: #063852;
     padding: 7px;
     color: white;
 }
@@ -191,8 +191,12 @@ main{
     font-weight: 600;
 }
 
-.alert{
+.alert-dark{
     background-color: #F0810F;
+}
+
+.alert-danger{
+    background-color: red;
 }
 
 .alert p{
