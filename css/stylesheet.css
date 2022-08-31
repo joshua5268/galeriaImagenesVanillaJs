@@ -1,11 +1,11 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #BA5536;
+  background-color: #34675C;
 }
 
 header{
-    background-color: #46211A;
+    background-color: #324851;
     border: 1px black solid;
 }
 
@@ -19,12 +19,12 @@ main{
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px black;
-    background-color: #46211A ;
+    background-color: #324851 ;
     cursor: pointer;
 }
 
 .caja:hover{
-    background-color:#A43820;
+    background-color:#86AC41;
 }
 
 .caja div{
@@ -58,7 +58,7 @@ main{
 .front {
     position: absolute;
     backface-visibility: hidden;
-    background-color: #693D3D;
+    background-color: #324851;
     color: white;
 }
 
@@ -71,7 +71,7 @@ main{
     position: absolute;
     backface-visibility: hidden;
     overflow-y: scroll;
-    background-color: #A43820;
+    background-color: #324851;
     transform: rotateY(180deg);
     color: white;
 }
@@ -135,7 +135,6 @@ main{
 }
 
 .modal_img{
-    background-color: #693D3D;
     margin-top: 10px;
     max-width: 90vw;
     max-height: 70vh;
@@ -171,11 +170,30 @@ main{
     border-radius: 50%;
     border: none;
     box-shadow: 2px 2px 2px 1px black;
-    background-color: #46211A;
+    background-color: #324851;
     color: white;
     font-size: 1.5rem;
 }
 
 .btnDesp:hover{
-    background-color: #A43820;
+    background-color: #86AC41;
+}
+
+.dropdown-menu{
+    background-color: #7DA3D1;
+}
+
+.dropdown-menu a{
+    color: white;
+    font-weight: 600;
+}
+
+.alert{
+    background-color: #7DA3D1;
+}
+
+.alert p{
+    color: white;
+    font-size: large;
+    font-weight: 500;
 }
