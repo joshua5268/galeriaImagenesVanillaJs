@@ -29,7 +29,7 @@ function dibujarTarjetas(arreglo){
             <i class="bi bi-arrows-fullscreen expandirImage" data-modal="show" data-image="${elemento.image}" data-name="${elemento.name}"></i>
             <img src="${elemento.image}" data-girar="${elemento.id}" class="imgPhoto">
             <div class="card-body">
-                <p class="card-title fs-3">${elemento.name}</p>
+                <p class="card-title fs-4">${elemento.name}</p>
                 <p class="card-text fs-6">${elemento.house}</p>
             </div>
             `;
