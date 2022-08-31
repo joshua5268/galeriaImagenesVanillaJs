@@ -1,11 +1,11 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #34675C;
+  background-color: #063852;
 }
 
 header{
-    background-color: #324851;
+    background-color: #011A27;
     border: 1px black solid;
 }
 
@@ -19,12 +19,16 @@ main{
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px black;
-    background-color: #324851 ;
+    background-color: #011A27 ;
     cursor: pointer;
+    color: white;
+    font-weight: 300;
 }
 
 .caja:hover{
-    background-color:#86AC41;
+    background-color:#E6DF44;
+    color: black;
+    font-weight: 600;
 }
 
 .caja div{
@@ -32,10 +36,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.caja p{
-    color: white;
 }
 
 .tarjeta {
@@ -52,14 +52,14 @@ main{
     text-align: center;
     transition: transform .7s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
 .front {
     position: absolute;
     backface-visibility: hidden;
-    background-color: #324851;
+    background-color: #011A27;
     color: white;
+    box-shadow: 2px 2px 2px 1px black;
 }
 
 .imgPhoto:hover{
@@ -71,9 +71,10 @@ main{
     position: absolute;
     backface-visibility: hidden;
     overflow-y: scroll;
-    background-color: #324851;
+    background-color: #011A27;
     transform: rotateY(180deg);
     color: white;
+    box-shadow: 2px 2px 2px 1px black;
 }
 
 .card{
@@ -130,8 +131,9 @@ main{
 }
 
 .modal_container{
-    background-color: white;
-    padding: 10px;
+    background-color: #7DA3D1;
+    padding: 7px;
+    color: white;
 }
 
 .modal_img{
@@ -170,17 +172,18 @@ main{
     border-radius: 50%;
     border: none;
     box-shadow: 2px 2px 2px 1px black;
-    background-color: #324851;
+    background-color: #011A27;
     color: white;
     font-size: 1.5rem;
 }
 
 .btnDesp:hover{
-    background-color: #86AC41;
+    background-color: #E6DF44;
+    color: black;
 }
 
 .dropdown-menu{
-    background-color: #7DA3D1;
+    background-color: #F0810F;
 }
 
 .dropdown-menu a{
@@ -189,7 +192,7 @@ main{
 }
 
 .alert{
-    background-color: #7DA3D1;
+    background-color: #F0810F;
 }
 
 .alert p{
