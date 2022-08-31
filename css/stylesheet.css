@@ -83,7 +83,7 @@ main{
 
 .card img{
     object-fit: cover;
-    height: 70%;
+    height: 65%;
 }
 
 .card-body p{
