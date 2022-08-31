@@ -1,5 +1,7 @@
 let modal = document.querySelector(".modal1");
-let cerrarModal = document.querySelector(".close")
+let cerrarModal = document.querySelector(".close");
+let btnUp = document.querySelector("#btnDespUp");
+let btnDown = document.querySelector("#btnDespDown");
 
 cerrarModal.addEventListener("click", (e) => {
     e.preventDefault();
@@ -17,3 +19,17 @@ function mostrarModal(elemento){
     document.querySelector("#nameNam").innerHTML = nombre;
     modal.classList.add('modal1--show');
 }
+
+btnUp.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
+
+btnDown.addEventListener("click", () => {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+    });
+});
