@@ -1,7 +1,8 @@
+let divMostrarResultados = document.querySelector("#resultados");
+let alertDiv = document.querySelector("#alertDiv");
+let alertResultados = document.querySelector("#alertResultados");
+
 function dibujarTarjetas(arreglo){
-    let divMostrarResultados = document.querySelector("#resultados");
-    let alertDiv = document.querySelector("#alertDiv");
-    let alertResultados = document.querySelector("#alertResultados");
     
     divMostrarResultados.innerHTML="";
     
@@ -22,7 +23,7 @@ function dibujarTarjetas(arreglo){
     
             // Frente de la tarjeta
             let cardf = document.createElement("div");
-            cardf.classList.add("card", "front");
+            cardf.classList.add("card", "front", "bg-1", "card1");
     
             cardf.innerHTML = `
             <button class="buttonFav" data-type="favoritos" id="${elemento.id}">💛</button>
@@ -36,7 +37,7 @@ function dibujarTarjetas(arreglo){
     
             //Cara trasera de la tarjeta
             let cardb = document.createElement("div");
-            cardb.classList.add("card", "back");
+            cardb.classList.add("card", "back", "bg-1", "card1");
     
             let cardbody = document.createElement("div");
             cardbody.classList.add("card-body");

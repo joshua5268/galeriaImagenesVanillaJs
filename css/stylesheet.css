@@ -1,11 +1,25 @@
+.bg-1{
+    background-color: #011A27;
+}
+
+.bg-2{
+    background-color: #063852;
+}
+
+.bg-3{
+    background-color: #F0810F;
+}
+
+.bg-4{
+    background-color: #3F681C;
+}
+
 body{
   margin: 0;
   padding: 0;
-  background-color: #063852;
 }
 
 header{
-    background-color: #011A27;
     border: 1px black solid;
 }
 
@@ -17,17 +31,14 @@ main{
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    border-radius: 5px;
     box-shadow: 2px 2px 2px 1px black;
-    background-color: #011A27 ;
     cursor: pointer;
-    color: white;
     font-weight: 300;
 }
 
 .caja:hover{
     background-color:#E6DF44;
-    color: black;
+    color: black !important;
     font-weight: 600;
 }
 
@@ -37,6 +48,7 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 
 .tarjeta {
     height: 500px;
@@ -57,32 +69,30 @@ main{
 .front {
     position: absolute;
     backface-visibility: hidden;
-    background-color: #011A27;
     color: white;
     box-shadow: 2px 2px 2px 1px black;
 }
 
 .imgPhoto:hover{
     opacity: .5;
-    box-shadow: 0 8px 8px 0 #46211A;    
+    box-shadow: 0 8px 8px 0 #063852;    
 }
 
 .back {
     position: absolute;
     backface-visibility: hidden;
     overflow-y: scroll;
-    background-color: #011A27;
     transform: rotateY(180deg);
     color: white;
     box-shadow: 2px 2px 2px 1px black;
 }
 
-.card{
+.card1{
     height: 100%;
     width: 100%;
 }
 
-.card img{
+.card1 img{
     object-fit: cover;
     height: 70%;
 }
@@ -131,7 +141,6 @@ main{
 }
 
 .modal_container{
-    background-color: #063852;
     padding: 7px;
     color: white;
 }
@@ -172,18 +181,12 @@ main{
     border-radius: 50%;
     border: none;
     box-shadow: 2px 2px 2px 1px black;
-    background-color: #011A27;
-    color: white;
     font-size: 1.5rem;
 }
 
 .btnDesp:hover{
     background-color: #E6DF44;
-    color: black;
-}
-
-.dropdown-menu{
-    background-color: #F0810F;
+    color: black !important;
 }
 
 .dropdown-menu a{
