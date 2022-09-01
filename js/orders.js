@@ -66,7 +66,6 @@ filtroAge.addEventListener("click", () => {
 
   if(filtroAge.getAttribute("data-age") == "menor"){
       let arrayAz = personajesFiltrado.sort(function (a, b) {
-        console.log(a)
         if (a.age === null) {
           return 1;
         }

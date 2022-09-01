@@ -3,8 +3,6 @@ let aleatorio = Math.floor(Math.random() * 215);
 
 btnDestacado.addEventListener("click", () => {
     let destacado = personajes[aleatorio];
-    console.log(destacado);
-
     divMostrarResultados.innerHTML="";
 
     let contenido = document.createElement("div")
